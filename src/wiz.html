@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <script src="jquery-1.3.2.min.js" type="text/javascript" language="javascript"></script>
+        <script src="oz.js" type="text/javascript" language="javascript"></script>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <script type="text/javascript" language="javascript">
+            $(function(){
+                $('#wizard1').oz();
+            });
+        </script>
+    </head>
+    <body>
+        <h1>Oz Wizard</h1>
+
+        <ul id="wizard1" template="#wizard1_template">
+            <li class="step_1">
+                <div id="step_1_body">
+                    <h2>Dados Gerais da Página</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec felis tortor, condimentum id dapibus non, tincidunt vitae enim. Sed a risus vitae magna pharetra aliquam. Praesent imperdiet suscipit pellentesque. Proin ut justo sagittis dolor sollicitudin dictum. Curabitur eget dolor eget turpis condimentum malesuada auctor non libero. Proin accumsan, odio a sagittis porttitor, odio sem porttitor lectus, a sodales massa lorem quis tellus. Aliquam cursus ornare sodales. Sed accumsan diam a orci ultricies auctor. Sed nec gravida elit. Etiam tincidunt tortor a nisi pretium id vestibulum nisi tempor. Nulla et diam magna. Integer at ante lorem, ac ultrices tortor. Vivamus consectetur magna eget tortor imperdiet pulvinar dapibus erat lobortis. Donec fringilla pellentesque ipsum, vel suscipit risus vestibulum nec. Maecenas pellentesque dolor sed ligula tempus id auctor lorem consectetur. Aenean convallis, mi sit amet scelerisque posuere, augue purus pretium nibh, eu varius dolor risus nec ligula. Aliquam erat volutpat. Donec ut augue purus. Nunc venenatis nibh non nisi sagittis nec iaculis mi facilisis. Aenean tincidunt libero iaculis massa aliquet commodo eu non quam. 
+                    </p>
+                </div>
+            </li>
+            <li class="step_2">
+                <div id="step_2_body">
+                    <h2>Page Template</h2>
+                    <p>
+                        Quisque hendrerit congue mi vel elementum. Nam enim ipsum, ultrices vel consectetur quis, pulvinar sit amet justo. Nam vel adipiscing massa. Aenean aliquet libero eu nisl ornare ac pretium tellus commodo. Nulla facilisi. Phasellus porta congue consectetur. Aliquam erat volutpat. Vivamus pretium, velit non rutrum ornare, dui diam sagittis orci, eget euismod dolor nunc ut arcu. Maecenas vel convallis erat. Donec a risus vehicula odio dapibus tempus.
+                    </p>
+                    <p>
+Mauris ut arcu facilisis risus laoreet tincidunt molestie ut tortor. Aenean fringilla, neque eu auctor consequat, erat nulla sollicitudin neque, sit amet porttitor velit elit quis ante. Pellentesque tempus risus eu nibh congue feugiat. Mauris congue, odio vitae varius tincidunt, justo lorem mattis diam, interdum pellentesque nisl mi quis est. Vivamus consequat eleifend dolor, sit amet aliquet lectus vehicula sed. Ut orci nisi, tempus at tincidunt in, imperdiet ac enim. Donec vel nulla et tellus bibendum pharetra. Nam facilisis eleifend velit quis porttitor. Phasellus risus massa, imperdiet id tincidunt sed, luctus congue risus. Sed eget neque tellus, vitae congue enim. Ut vehicula lacus nec dolor accumsan varius non a orci. 
+                    </p>
+                </div>
+            </li>
+            <li class="step_3">
+                <div id="step_3_body">
+                    <h2>Tag de Audiência</h2>
+                    <p>
+                    Nunc interdum felis non velit blandit congue. Vestibulum facilisis leo non mauris vestibulum sagittis. Nulla ullamcorper neque vel eros commodo at vestibulum magna rhoncus. Praesent vel mauris dui, a placerat mauris. Etiam id libero enim, in vulputate ante. Fusce ultricies viverra laoreet. Sed sodales, ipsum sed pharetra tristique, velit sem pretium mauris, non accumsan neque sapien at sapien. Suspendisse dolor sapien, placerat vitae vestibulum ac, eleifend ac massa. Sed dictum adipiscing nisl, eu iaculis enim sodales ac. Nullam neque odio, volutpat nec aliquet a, porttitor sit amet nunc. Nunc et quam purus, nec accumsan ligula. Cras dapibus, lectus blandit pulvinar pharetra, massa risus laoreet turpis, a rhoncus leo lorem quis dui. Nulla egestas mi nec lorem pulvinar volutpat. Donec ut libero lorem. Curabitur varius egestas interdum. Proin elementum vehicula sem at convallis. Suspendisse massa elit, eleifend vel fermentum quis, interdum et lectus. Donec sit amet consectetur orci. Maecenas velit nisl, ultricies in blandit a, sodales ut nisl.
+                    </p>
+                    <p>
+Ut egestas velit ornare libero dignissim ullamcorper. Aenean lacus eros, scelerisque vitae suscipit ut, laoreet et orci. Maecenas sit amet metus a diam dignissim consequat et non odio. Curabitur imperdiet euismod commodo. Nam velit nisl, porta nec facilisis eu, porta vitae tortor. In lacinia semper erat, non aliquet sapien consequat non. Maecenas luctus tellus eros, vel fringilla augue. Mauris adipiscing mollis faucibus. Suspendisse varius tincidunt condimentum. In ligula massa, imperdiet sit amet venenatis nec, suscipit vitae diam. Nullam eget libero vitae nulla tincidunt posuere et id tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras urna erat, laoreet et ultrices vel, accumsan in risus. Fusce tincidunt tempus leo, at sagittis massa pellentesque sit amet. Morbi felis neque, dapibus pretium pretium ac, placerat at felis. 
+                    </p>
+                </div>
+            </li>
+        </ul>
+        <div id="wizard1_template" style="display:none;">
+            <div class="wizard">
+                <div class="navigation">
+                    <a class="previous" name="previous_step" href="javascript:">Previous</a> | 
+                    <a class="next" name="next_step" href="javascript:">Next</a>
+                </div>
+                <div class="body">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
