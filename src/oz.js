@@ -55,8 +55,9 @@ jQuery.fn.oz = function(options) {
         current_step = parseInt(wiz.attr('current_step_index')) + offset;
         total_steps = wizard_body.children('div').length;
 
-        if (settings.pre_previous)
-            settings.pre_previous(current_step);
+        if (settings.pre_step)
+            settings.pre_step(current_step, settings);
+            if (settings.cancel_step) return;
 
         wizard_body.children('div').hide();
         current_step_selector = settings.step_selector.replace("{step_index}", current_step);
@@ -65,8 +66,8 @@ jQuery.fn.oz = function(options) {
 
         wiz.attr('current_step_index', current_step);
 
-        if (settings.post_previous)
-            settings.post_previous(current_step);
+        if (settings.post_step)
+            settings.post_step(current_step);
 
         enable_navigation_links(total_steps, current_step, settings);
 
