@@ -1,4 +1,39 @@
-.wizard{
-    border: solid 1px black;
-    width: 400px;
+.wizard {
+    width: 646px;
+}
+
+.wizard  > .title {
+    background-image: url('wiz_top.gif');
+    background-repeat: no-repeat;
+    height: 40px;
+    padding-top: 6px;
+    padding-left: 20px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.wizard  > .navigation {
+    background-repeat: no-repeat;
+    background-image: url('wiz_bottom.gif');
+    height: 30px;
+    padding-top: 3px;
+    padding-right: 20px;
+    text-align: right;
+    color: white;
+}
+
+.wizard  > .navigation > a {
+    color: white;
+    font-weight: bold;
+}
+
+.wizard > .body {
+    margin-top:-10px;
+    margin-bottom:0px;
+    margin-left:10px;
+    margin-right:10px;
+    height: 400px;
+    overflow: auto;
+    text-align: justify;
 }
